@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーランスセラピストとして一歩目を進めるための学習システム">
+    <title>フリーランスセラピストアカデミー・ビギナー研修</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>フリーランスセラピストアカデミー</h1>
+            <p>ビギナー研修プログラム - あなたの第一歩をサポートします</p>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-steps" id="progressSteps">
+                <div class="progress-step" data-step="1">
+                    <div class="step-circle">1</div>
+                    <div class="step-label">アイデア発見</div>
+                </div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-circle">2</div>
+                    <div class="step-label">ビジネス設計</div>
+                </div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-circle">3</div>
+                    <div class="step-label">学び①</div>
+                </div>
+                <div class="progress-step" data-step="4">
+                    <div class="step-circle">4</div>
+                    <div class="step-label">学び②</div>
+                </div>
+                <div class="progress-step" data-step="5">
+                    <div class="step-circle">5</div>
+                    <div class="step-label">完了</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lesson 1 -->
+        <section class="lesson-section" id="lesson1" data-lesson="1">
+            <div class="lesson-card">
+                <span class="lesson-number">レッスン 1</span>
+                <h2>アイデアの発見と可能性の探求</h2>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/7Hd-X47sg0A" 
+                        title="レッスン1: アイデアの発見"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <form class="survey-form" id="survey1">
+                    <h3>アンケート</h3>
+                    
+                    <div class="form-group">
+                        <label for="q1_1">〇〇に対して△△を提供して××な変化を起こす（アイデア）<br>※出来るだけたくさん挙げてください</label>
+                        <textarea id="q1_1" name="q1_1" required placeholder="例：腰痛に悩む30代女性に対して、オンラインストレッチ指導を提供して、日常生活の質を向上させる"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q1_2">↑でイメージしたクライアントはどんなことを望んでいるか？</label>
+                        <textarea id="q1_2" name="q1_2" required placeholder="クライアントの望みや期待を具体的に記入してください"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q1_3">思いついた商品/サービスアイデアの中で1番可能性が高そうなアイデアは？</label>
+                        <textarea id="q1_3" name="q1_3" required placeholder="最も実現可能性が高いと思うアイデアを記入してください"></textarea>
+                    </div>
+
+                    <div class="navigation">
+                        <button type="submit" class="btn btn-primary">
+                            次のレッスンへ
+                            <span>→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Lesson 2 -->
+        <section class="lesson-section" id="lesson2" data-lesson="2">
+            <div class="lesson-card">
+                <span class="lesson-number">レッスン 2</span>
+                <h2>ビジネスモデルの具体化</h2>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/v5a2OX-ySiI" 
+                        title="レッスン2: ビジネスモデルの具体化"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <form class="survey-form" id="survey2">
+                    <h3>アンケート</h3>
+                    
+                    <div class="form-group">
+                        <label for="q2_1">改めて、優先順位の高いアイデアを教えてください<br>（〇〇に対して、△△を提供して、××な変化を起こす）</label>
+                        <textarea id="q2_1" name="q2_1" required placeholder="最も優先順位の高いアイデアを記入してください"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q2_2">価格設定はどうしますか？</label>
+                        <textarea id="q2_2" name="q2_2" required placeholder="例：1回60分 8,000円、月額サブスクリプション 25,000円など"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q2_3">活動エリアはどうしますか？（リアル or オンラインなど）</label>
+                        <textarea id="q2_3" name="q2_3" required placeholder="対面、オンライン、ハイブリッドなど、活動形態を記入してください"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q2_4">営業の方法のアイデアはありますか？<br>（リアル or オンライン、どんな媒体で、どんな言葉を使うか、など）</label>
+                        <textarea id="q2_4" name="q2_4" required placeholder="SNS、ブログ、紹介、チラシなど、具体的な営業方法を記入してください"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="q2_5">今すでに身の回りで顧客になるような方はいますか？<br>もしいれば具体的にその方の様子を教えてください</label>
+                        <textarea id="q2_5" name="q2_5" placeholder="具体的な人物像や状況を記入してください（いない場合は「いない」と記入）"></textarea>
+                    </div>
+
+                    <div class="navigation">
+                        <button type="button" class="btn btn-secondary" onclick="app.previousLesson()">
+                            <span>←</span>
+                            前のレッスン
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            次のレッスンへ
+                            <span>→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Lesson 3 -->
+        <section class="lesson-section" id="lesson3" data-lesson="3">
+            <div class="lesson-card">
+                <span class="lesson-number">レッスン 3</span>
+                <h2>学びと気づき①</h2>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/qsSkEuOUNg4" 
+                        title="レッスン3: 学びと気づき①"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <form class="survey-form" id="survey3">
+                    <h3>アンケート</h3>
+                    
+                    <div class="form-group">
+                        <label for="q3_1">3本目の動画を見て気づいたこと、考えたことはありますか？</label>
+                        <textarea id="q3_1" name="q3_1" required placeholder="動画を見て感じたこと、気づいたこと、考えたことを自由に記入してください"></textarea>
+                    </div>
+
+                    <div class="navigation">
+                        <button type="button" class="btn btn-secondary" onclick="app.previousLesson()">
+                            <span>←</span>
+                            前のレッスン
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            次のレッスンへ
+                            <span>→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Lesson 4 -->
+        <section class="lesson-section" id="lesson4" data-lesson="4">
+            <div class="lesson-card">
+                <span class="lesson-number">レッスン 4</span>
+                <h2>学びと気づき②</h2>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/zVALQw2fg-I" 
+                        title="レッスン4: 学びと気づき②"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <form class="survey-form" id="survey4">
+                    <h3>アンケート</h3>
+                    
+                    <div class="form-group">
+                        <label for="q4_1">4本目の動画を見て気づいたこと、考えたことはありますか？</label>
+                        <textarea id="q4_1" name="q4_1" required placeholder="動画を見て感じたこと、気づいたこと、考えたことを自由に記入してください"></textarea>
+                    </div>
+
+                    <div class="navigation">
+                        <button type="button" class="btn btn-secondary" onclick="app.previousLesson()">
+                            <span>←</span>
+                            前のレッスン
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            次のレッスンへ
+                            <span>→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Lesson 5 -->
+        <section class="lesson-section" id="lesson5" data-lesson="5">
+            <div class="lesson-card">
+                <span class="lesson-number">レッスン 5</span>
+                <h2>学びと気づき③</h2>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/yM9sgRNLONs" 
+                        title="レッスン5: 学びと気づき③"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <form class="survey-form" id="survey5">
+                    <h3>アンケート</h3>
+                    
+                    <div class="form-group">
+                        <label for="q5_1">5本目の動画を見て気づいたこと、考えたことはありますか？</label>
+                        <textarea id="q5_1" name="q5_1" required placeholder="動画を見て感じたこと、気づいたこと、考えたことを自由に記入してください"></textarea>
+                    </div>
+
+                    <div class="navigation">
+                        <button type="button" class="btn btn-secondary" onclick="app.previousLesson()">
+                            <span>←</span>
+                            前のレッスン
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            研修を完了する
+                            <span>✓</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Completion Screen -->
+        <section class="completion-screen" id="completionScreen">
+            <div class="lesson-card">
+                <div class="completion-icon">🎉</div>
+                <h2>おめでとうございます！</h2>
+                <p>フリーランスセラピストアカデミー・ビギナー研修を完了しました。<br>
+                あなたの学びと気づきが、これからの活動の大きな一歩となることを願っています。</p>
+                
+                <button class="btn btn-primary" onclick="app.resetProgress()">
+                    最初から復習する
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
