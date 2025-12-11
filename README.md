@@ -92,4 +92,4 @@ Yuto Tashiro - フリーランスセラピスト
 
 **Note**: このシステムは学習目的で作成されており、回答データはブラウザのlocalStorageにのみ保存されます。
 
-<!-- Collaboration test: connection verified -->
+<!-- Collaboration test: 安藤がtestしてます -->
